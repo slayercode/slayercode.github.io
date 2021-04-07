@@ -97,7 +97,13 @@ function rellenar(valor) {
       matriz[i][j] = Random(1, 100);
     }
   }
-  console.log(matriz);
+  Output("<span>" + "Matriz Original" + "</span><br/>");
+  for (var i = 0; i < tamanio; i++) {
+    for (var j = 0; j < tamanio; j++) {
+      var out = "<span>" + "[" + i + "]" + " [" + j + "]: " + matriz[i][j] + "</span><br/>";
+      Output(out);
+    }
+  }
   // console.log(tamanio);
 }
 
@@ -113,7 +119,14 @@ function transpuesta_matriz() {
       transpuesta[i][j] = matriz[j][i];
     }
   }
-  console.log(transpuesta);
+
+  Output("<span>" + "Transpuesta" + "</span><br/>");
+  for (var i = 0; i < tamanio; i++) {
+    for (var j = 0; j < tamanio; j++) {
+      var out = "<span>" + "[" + i + "]" + " [" + j + "]: " +transpuesta[i][j] + "</span><br/>";
+      Output(out);
+    }
+  }
 }
 
 function crear() {
