@@ -9,6 +9,8 @@ var toOutput;
 var tamanio;
 var matriz;
 var transpuesta;
+var sumaa;
+var multiplicacion;
 
 window.onload = function () {
   var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
@@ -35,6 +37,8 @@ input.keypress(function (e) {
       tamanio = inputVal;
       rellenar(inputVal);
       transpuesta_matriz();
+      suma();
+      Multiplicar();
       input.val("");
     } else {
       Output("<span>comando no encontrado</span></br>");
@@ -123,7 +127,41 @@ function transpuesta_matriz() {
   Output("<span>" + "Transpuesta" + "</span><br/>");
   for (var i = 0; i < tamanio; i++) {
     for (var j = 0; j < tamanio; j++) {
-      var out = "<span>" + "[" + i + "]" + " [" + j + "]: " +transpuesta[i][j] + "</span><br/>";
+      var out = "<span>" + "[" + i + "]" + " [" + j + "]: " + transpuesta[i][j] + "</span><br/>";
+      Output(out);
+    }
+  }
+}
+
+function suma(){
+  sumaa = crear();
+  for (var i = 0; i < tamanio; i++) {
+    for (var j = 0; j < tamanio; j++) {
+      sumaa[i][j] = matriz[i][j] + transpuesta[i][j]
+    }
+  }
+  Output("<span>" + "Suma" + "</span><br/>");
+  for (var i = 0; i < tamanio; i++) {
+    for (var j = 0; j < tamanio; j++) {
+      var out = "<span>" + "[" + i + "]" + " [" + j + "]: " + sumaa[i][j] + "</span><br/>";
+      Output(out);
+    }
+  }
+}
+
+function Multiplicar () {
+  multiplicacion = crear();
+	for (i=0; i < tamanio; i++){
+		for (j=0; j < tamanio; j++){
+			for (k=0; k < tamanio; k++){
+				multiplicacion[i][j] = matriz[i][k] * transpuesta[k][j];
+			}
+		}
+	}
+  Output("<span>" + "Multiplicación" + "</span><br/>");
+  for (var i = 0; i < tamanio; i++) {
+    for (var j = 0; j < tamanio; j++) {
+      var out = "<span>" + "[" + i + "]" + " [" + j + "]: " + multiplicacion[i][j] + "</span><br/>";
       Output(out);
     }
   }
@@ -132,7 +170,7 @@ function transpuesta_matriz() {
 function crear() {
   var matrix = new Array(tamanio);
   for (var h = 0; h < tamanio; h++) {
-    matrix[h] = new Array(tamanio);
+    matrix[h] = new Array(tamanio).fill(0);
   }
   return matrix;
 }
