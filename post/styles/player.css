@@ -13,80 +13,13 @@ body {
     width: 100%;
     min-height: 100vh;
     font-size: 1.5rem;
-    background-image: linear-gradient(
-            7deg,
-            rgba(156, 156, 156, 0.06) 0%,
-            rgba(156, 156, 156, 0.06) 50%,
-            rgba(52, 52, 52, 0.06) 50%,
-            rgba(52, 52, 52, 0.06) 100%
-        ),
-        linear-gradient(
-            150deg,
-            rgba(233, 233, 233, 0.06) 0%,
-            rgba(233, 233, 233, 0.06) 50%,
-            rgba(34, 34, 34, 0.06) 50%,
-            rgba(34, 34, 34, 0.06) 100%
-        ),
-        linear-gradient(
-            165deg,
-            rgba(97, 97, 97, 0.06) 0%,
-            rgba(97, 97, 97, 0.06) 50%,
-            rgba(98, 98, 98, 0.06) 50%,
-            rgba(98, 98, 98, 0.06) 100%
-        ),
-        linear-gradient(
-            145deg,
-            rgba(246, 246, 246, 0.06) 0%,
-            rgba(246, 246, 246, 0.06) 50%,
-            rgba(76, 76, 76, 0.06) 50%,
-            rgba(76, 76, 76, 0.06) 100%
-        ),
-        linear-gradient(
-            9deg,
-            rgba(122, 122, 122, 0.06) 0%,
-            rgba(122, 122, 122, 0.06) 50%,
-            rgba(211, 211, 211, 0.06) 50%,
-            rgba(211, 211, 211, 0.06) 100%
-        ),
-        linear-gradient(
-            307deg,
-            rgba(86, 86, 86, 0.06) 0%,
-            rgba(86, 86, 86, 0.06) 50%,
-            rgba(150, 150, 150, 0.06) 50%,
-            rgba(150, 150, 150, 0.06) 100%
-        ),
-        linear-gradient(
-            113deg,
-            rgba(166, 166, 166, 0.06) 0%,
-            rgba(166, 166, 166, 0.06) 50%,
-            rgba(15, 15, 15, 0.06) 50%,
-            rgba(15, 15, 15, 0.06) 100%
-        ),
-        linear-gradient(
-            347deg,
-            rgba(21, 21, 21, 0.06) 0%,
-            rgba(21, 21, 21, 0.06) 50%,
-            rgba(254, 254, 254, 0.06) 50%,
-            rgba(254, 254, 254, 0.06) 100%
-        ),
-        linear-gradient(
-            230deg,
-            rgba(168, 168, 168, 0.06) 0%,
-            rgba(168, 168, 168, 0.06) 50%,
-            rgba(251, 251, 251, 0.06) 50%,
-            rgba(251, 251, 251, 0.06) 100%
-        ),
-        radial-gradient(
-            circle at center center,
-            rgb(145, 225, 49),
-            rgb(27, 239, 112)
-        );
+    
 }
 
 main {
     width: 100%;
     min-height: 100vh;
-
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 50%, crimson 100%);
     display: flex;
     align-items: center;
     justify-content: center;
