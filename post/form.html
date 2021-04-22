@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Formulario para consultas</title>
     <link rel="stylesheet" href="/post/styles/form.css">
     <script src="/post/js/form.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
+
 <body>
-    <form action="" class="formulario">
-        <h1 class="formulario__titulo">Consulta</h1>
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Nombres</label>
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Carrera</label>
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Semestre</label>
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Tema</label>
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Correo</label>
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Teléfono</label>
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Mensaje</label>
-        <input type="submit" class="formulario__submit">
-      </form>
+    <div class="container">
+        <div class="header">
+            <h2>Formulario para Consultas</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="nombres">Nombres</label>
+                <input type="text" placeholder="Michael Pérez" id="nombres" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="carrera">Carrera</label>
+                <input type="text" placeholder="Sistemas de Información" id="carrera" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="semestre">Semestre</label>
+                <input type="text" placeholder="Quinto" id="semestre" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="tema">Tema</label>
+                <input type="text" placeholder="Estructura de Datos" id="tema" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="michael@email.com" id="correo" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="telefono">Télefono</label>
+                <input type="text" placeholder="0998563766" id="telefono" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="mensaje">Mensaje</label>
+                <input type="text" placeholder="Quiero agendar una cita para asesoría" id="mensaje" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="/post/js/form.js"></script>
 </body>
+
 </html>
