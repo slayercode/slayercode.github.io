@@ -63,7 +63,7 @@
 }
 
 body {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 50%, crimson 100%);
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
