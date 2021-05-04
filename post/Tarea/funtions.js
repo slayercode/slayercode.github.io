@@ -25,11 +25,12 @@ function crearBasedeDatos(evento){
 
 function buscar(){
     cajaDatos.innerHTML = "";
-    var buscar = document.getElementById("fecha").value;
+    var buscarA = document.getElementById("fechaA").value;
+    var buscarB = document.getElementById("fechaB").value;
     var transaccion = bd.transaction(["peliculas"]);
     var alamacen =  transaccion.objectStore("peliculas");
     var indice = alamacen.index("BuscarFecha");
-    var rango = IDBKeyRange.only(buscar);
+    var rango = IDBKeyRange.bound(buscarA, buscarB, false, false);
     var puntero = indice.openCursor(rango);
     puntero.addEventListener("success",mostrarDatos);
 }
