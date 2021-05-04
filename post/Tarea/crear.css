@@ -1,0 +1,20 @@
+#cajaFormulario{
+    float: left;
+    padding: 20px;
+    border: 1px solid #12ed12;
+}
+#cajaDatos{
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #ee6934;
+}
+#clave,#fecha,#texto{
+    width: 300px;
+}
+
+#cajaDatos >  div{
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
