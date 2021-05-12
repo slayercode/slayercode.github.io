@@ -1,0 +1,26 @@
+[
+    {
+        "precio": 25,
+        "id": 1,
+        "title": "Programming Classes",
+        "thumbnailUrl": "https://picsum.photos/id/180/2400/1600"
+    },
+    {
+        "precio": 300,
+        "id": 2,
+        "title": "Web Pages",
+        "thumbnailUrl": "https://picsum.photos/id/20/3670/2462"
+    },
+    {
+        "precio": 300,
+        "id": 3,
+        "title": "Mobile Apps",
+        "thumbnailUrl": "https://picsum.photos/id/3/5616/3744"
+    },
+    {
+        "precio": 500,
+        "id": 4,
+        "title": "Desktop Apps",
+        "thumbnailUrl": "https://picsum.photos/id/366/4000/3000"
+    }
+]

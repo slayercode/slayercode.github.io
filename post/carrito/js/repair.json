@@ -1,0 +1,26 @@
+[
+    {
+        "precio": 20,
+        "id": 1,
+        "title": "Repair Accessories",
+        "thumbnailUrl": "https://picsum.photos/id/26/4209/2769"
+    },
+    {
+        "precio": 30,
+        "id": 2,
+        "title": "Printer Repair",
+        "thumbnailUrl": "https://picsum.photos/id/36/4179/2790"
+    },
+    {
+        "precio": 30,
+        "id": 3,
+        "title": "Laptop Repair",
+        "thumbnailUrl": "https://picsum.photos/id/370/4928/3264"
+    },
+    {
+        "precio": 50,
+        "id": 4,
+        "title": "SmarthPhone Repair",
+        "thumbnailUrl": "https://picsum.photos/id/373/4896/3264"
+    }
+]
